@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>COM_MAXIM</name>
+	<creationDate>2013-01-31</creationDate>
+	<author>Maxim</author>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql" folder="admin">install.sql</file>
+		</sql>
+	</install>
+
+	
+	<administration>
+		<menu link="option=com_lendr" img="components/com_lendr/assets/images/lendr_icon.png">COM_MAXIM</menu>
+
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>languages</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>maxim.php</filename>
+		</files>  
+
+		<languages folder="admin">
+			<language tag="en-GB">languages/en-GB/en-GB.com_maxim.ini</language>
+			<language tag="en-GB">languages/en-GB/en-GB.com_maxim.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>

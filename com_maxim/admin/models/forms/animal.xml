@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="details" >
+		<field name="id" type="text" default="0"
+			readonly="true" class="readonly"
+			label="JGLOBAL_FIELD_ID_LABEL" 	description ="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="name" type="text" class="inputbox"
+			size="40" label="COM_MAXIM_FIELD_NAME_LABEL"
+			description="COM_MAXIM_FIELD_NAME_DESC" required="true" />
+
+		<field name="weight" type="text" class="inputbox"
+			size="40" label="JFIELD_WEIGHT_LABEL"
+			description="COM_MAXIM_FIELD_WEIGHT_DESC" required="true" />
+
+		<field name="height" type="text" class="inputbox"
+		       size="40" label="JFIELD_HEIGHT_LABEL"
+		       description="COM_MAXIM_FIELD_HEIGHT_DESC" required="true" />
+
+		<field name="speed" type="text" class="inputbox"
+		       size="40" label="JFIELD_SPEED_LABEL"
+		       description="COM_MAXIM_FIELD_SPEED_DESC" required="true" />
+
+		<field name="published" type="list"
+			label="JSTATUS" description="COM_MAXIM_FIELD_PUBLISHED_DESC"
+			class="inputbox" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+		<field name="description" type="textarea" class="inputbox"
+			rows="3" cols="30" label="JGLOBAL_DESCRIPTION"
+			description="COM_MAXIM_FIELD_DESCRIPTION_DESC" />
+
+	</fieldset>
+
+</form>
