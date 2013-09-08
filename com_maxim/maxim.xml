@@ -12,7 +12,7 @@
 
 	
 	<administration>
-		<menu link="option=com_lendr" img="components/com_lendr/assets/images/lendr_icon.png">COM_MAXIM</menu>
+		<menu link="option=com_maxim">COM_MAXIM</menu>
 
 		<files folder="admin">
 			<folder>controllers</folder>
