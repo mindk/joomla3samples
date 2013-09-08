@@ -14,6 +14,8 @@ defined('_JEXEC') or die('Restricted access');
 class DimaControllersCancel extends DimaControllersDefault
 {
 	/**
+	 * Cancel action
+	 *
 	 * @return bool
 	 */
 	public function execute()

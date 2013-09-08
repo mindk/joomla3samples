@@ -13,7 +13,9 @@ defined('_JEXEC') or die('Restricted access');
  */
 class DimaViewsItemHtml extends JViewHtml
 {
-
+	/**
+	 * Default layout preparations
+	 */
 	protected function _default()
 	{
 		$this->item = $this->model->getItem();
@@ -26,6 +28,11 @@ class DimaViewsItemHtml extends JViewHtml
 		JToolbarHelper::cancel();
 	}
 
+	/**
+	 * View render method
+	 *
+	 * @return mixed
+	 */
 	function render()
 	{
 		//retrieve task list from model

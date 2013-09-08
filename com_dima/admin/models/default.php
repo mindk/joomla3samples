@@ -170,7 +170,7 @@ abstract class DimaModelsDefault extends JModelBase
 	}
 
 	/**
-	 * Get item
+	 * Get single item
 	 *
 	 * @return null
 	 */
