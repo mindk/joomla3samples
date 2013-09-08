@@ -2,24 +2,24 @@
 <form>
     <fieldset name="params">
         <field name="firstname" type="text" default=""
-               label="com_vpetrenko_FIRSTNAME" description="com_vpetrenko_FIRSTNAME" required="true" />
+               label="COM_PETRENKO_FIRSTNAME" description="COM_PETRENKO_FIRSTNAME" required="true" />
 
         <field name="lastname" type="text" default="" required="true"
-               label="com_vpetrenko_LASTNAME" description="com_vpetrenko_LASTNAME" />
+               label="COM_PETRENKO_LASTNAME" description="COM_PETRENKO_LASTNAME" />
 
         <field name="group" type="text" default=""
-               label="com_vpetrenko_GROUP" description="com_vpetrenko_GROUP" />
+               label="COM_PETRENKO_GROUP" description="COM_PETRENKO_GROUP" />
 
         <field name="address" type="text"
-               label="com_vpetrenko_ADDRESS" description="com_vpetrenko_ADDRESS" />
+               label="COM_PETRENKO_ADDRESS" description="COM_PETRENKO_ADDRESS" />
 
         <field name="hobby" type="text"
-                       label="com_vpetrenko_ADDRESS" description="com_vpetrenko_ADDRESS" />
+                       label="COM_PETRENKO_ADDRESS" description="COM_PETRENKO_ADDRESS" />
 
 
         <field name="published" type="radio" class="btn-group"
-               label="com_vpetrenko_PUBLISHED"
-               description="com_vpetrenko_PUBLISHED"
+               label="COM_PETRENKO_PUBLISHED"
+               description="COM_PETRENKO_PUBLISHED"
                default="0"
                 >
             <option value="0">JNO</option>
@@ -27,8 +27,9 @@
         </field>
 
         <field name="id" type="hidden"
-               label="com_vpetrenko_ID" description="com_vpetrenko_ID" />
+               label="COM_PETRENKO_ID" description="COM_PETRENKO_ID" />
 
     </fieldset>
 
 </form>
+
