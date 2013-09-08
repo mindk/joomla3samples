@@ -16,11 +16,11 @@ class DimaTablesItems extends JTable
 	/**
 	 * Constructor
 	 *
-	 * @param string $db
+	 * @param object $db
 	 *
 	 * @internal param \Database $object connector object
 	 */
-	function __construct(&$db)
+	function __construct($db)
 	{
 		parent::__construct('#__dima_items', 'id', $db);
 	}
