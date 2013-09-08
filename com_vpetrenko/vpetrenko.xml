@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>com_vpetrenko</name>
+	<author>Petrenko Vika</author>
+	<creationDate>September 2013</creationDate>
+	<copyright>(C) 2010 - 2013 MindK.</copyright>
+	<license>GNU General Public License version 2 or later;</license>
+	<authorEmail>hello@mindk.com</authorEmail>
+	<authorUrl>www.mindk.com</authorUrl>
+	<version>1.0</version>
+	<description>COM_VPETRENKO_DESCRIPTION</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+	</files>
+
+	<install folder="admin">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.sql</file>
+		</sql>
+	</install>
+
+	<uninstall folder="admin">
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<menu link="option=com_vpetrenko">com_vpetrenko</menu>
+
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>index.html</filename>
+			<filename>vpetrenko.php</filename>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_vpetrenko.ini</language>
+			<language tag="en-GB">language/en-GB.com_vpetrenko.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
+
+

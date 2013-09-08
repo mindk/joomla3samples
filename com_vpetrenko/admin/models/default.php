@@ -10,39 +10,14 @@ defined('_JEXEC') or die('Restricted access');
  */
 abstract class VpetrenkoModelsDefault extends JModelBase
 {
-	/**
-	 * @var int count list records
-	 */
+
 	protected $total = null;
-
-	/**
-	 * @var object pagination
-	 */
 	protected $pagination = null;
-
-	/**
-	 * @var JDatabaseDriver instance of database connection
-	 */
 	protected $db = null;
-
-	/**
-	 * @var JTable instance of table class
-	 */
+	protected $id = null;
 	protected $table = null;
-
-	/**
-	 * @var array data
-	 */
 	protected $data = null;
-
-	/**
-	 * @var string path to xml form settings
-	 */
 	protected $form_path = 'forms';
-
-	/**
-	 * @var object item
-	 */
 	protected $item = null;
 
 	/**

@@ -38,7 +38,7 @@ class VpetrenkoControllersSave extends VpetrenkoControllersDefault
 	}
 
 	/**
-	 * Execute the save action
+	 * Execute the save
 	 *
 	 * @return void
 	 */
