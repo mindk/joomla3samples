@@ -8,6 +8,9 @@
  */
 defined('_JEXEC') or die('Restricted access');
 
+/**
+ * Item view class
+ */
 class DimaViewsItemHtml extends JViewHtml
 {
 
