@@ -14,13 +14,13 @@
 		<filename>index.html</filename>
 	</files>
 
-	<install folder="admin">
+	<install>
 		<sql>
 			<file driver="mysql" charset="utf8">sql/install.sql</file>
 		</sql>
 	</install>
 
-	<uninstall folder="admin">
+	<uninstall>
 		<sql>
 			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
 		</sql>
