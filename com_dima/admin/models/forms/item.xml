@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field name="id" type="text" default="0"
+               readonly="true" class="readonly"
+               label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC"/>
+
+        <field name="name" type="text" class="inputbox"
+               size="40" label="COM_DIM_NAME"
+               description="COM_DIM_NAME_DESC" required="true"/>
+
+        <field name="description" type="textarea" class="inputbox"
+               cols="50" rows="20" label="COM_DIM_DESCRIPTION"
+               description="COM_DIM_DESCRIPTION"/>
+    </fieldset>
+</form>
