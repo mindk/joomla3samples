@@ -33,6 +33,7 @@ class MaximViewsAnimalHtml extends JViewHtml
 		JToolbarHelper::apply();
 		JToolbarHelper::save();
 		JToolbarHelper::cancel();
+		JFactory::getApplication()->input->set('hidemainmenu', true);
 
 		return parent::render();
 	}
