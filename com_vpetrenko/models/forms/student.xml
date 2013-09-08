@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="params">
+        <field name="firstname" type="text" default=""
+               label="com_vpetrenko_FIRSTNAME" description="com_vpetrenko_FIRSTNAME" required="true" />
+
+        <field name="lastname" type="text" default="" required="true"
+               label="com_vpetrenko_LASTNAME" description="com_vpetrenko_LASTNAME" />
+
+        <field name="group" type="text" default=""
+               label="com_vpetrenko_GROUP" description="com_vpetrenko_GROUP" />
+
+        <field name="address" type="text"
+               label="com_vpetrenko_ADDRESS" description="com_vpetrenko_ADDRESS" />
+
+        <field name="hobby" type="text"
+                       label="com_vpetrenko_ADDRESS" description="com_vpetrenko_ADDRESS" />
+
+
+        <field name="published" type="radio" class="btn-group"
+               label="com_vpetrenko_PUBLISHED"
+               description="com_vpetrenko_PUBLISHED"
+               default="0"
+                >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+
+        <field name="id" type="hidden"
+               label="com_vpetrenko_ID" description="com_vpetrenko_ID" />
+
+    </fieldset>
+
+</form>
