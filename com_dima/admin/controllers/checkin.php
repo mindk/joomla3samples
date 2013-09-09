@@ -43,5 +43,7 @@ class DimaControllersCheckin extends DimaControllersDefault
 		$this->app->enqueueMessage(JText::_('COM_DIM_CHECKED_IN_OK'), 'notice');
 
 		$this->app->redirect('index.php?option=com_dima');
+
+		return true;
 	}
 }

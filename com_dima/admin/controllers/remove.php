@@ -41,5 +41,7 @@ class DimaControllersRemove extends DimaControllersDefault
 		}
 
 		$this->app->redirect('index.php?option=com_dima');
+
+		return true;
 	}
 }

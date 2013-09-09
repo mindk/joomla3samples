@@ -19,8 +19,6 @@ class DimaTablesItems extends JTable
 	 * Constructor
 	 *
 	 * @param object $db
-	 *
-	 * @internal param \Database $object connector object
 	 */
 	function __construct($db)
 	{

@@ -63,5 +63,7 @@ class DimaControllersSave extends DimaControllersDefault
 			$redirect_url .= '&task=read&cid[]=' . $item->id;
 
 		$this->app->redirect($redirect_url);
+
+		return true;
 	}
 }

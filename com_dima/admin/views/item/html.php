@@ -33,7 +33,7 @@ class DimaViewsItemHtml extends JViewHtml
 	/**
 	 * View render method
 	 *
-	 * @return mixed
+	 * @return string
 	 */
 	function render()
 	{

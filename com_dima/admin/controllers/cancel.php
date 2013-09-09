@@ -30,5 +30,7 @@ class DimaControllersCancel extends DimaControllersDefault
 		$this->app->enqueueMessage('COM_DIM_CANCELLED');
 
 		$this->app->redirect('index.php?option=com_dima');
+
+		return true;
 	}
 }
