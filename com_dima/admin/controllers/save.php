@@ -1,19 +1,23 @@
 <?php
 /**
- * @package     Joomla.Administrator
- * @subpackage  com_dima
+ * @package     com_dima
  *
- * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @author      Davidov D.
+ * @copyright   Copyright (C) 2013 Mindk, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die('Restricted access');
 
 /**
  * Save action controller
+ *
+ * @package     com_dima
  */
 class DimaControllersSave extends DimaControllersDefault
 {
 	/**
+	 * Execute action
+	 *
 	 * @return bool
 	 */
 	public function execute()

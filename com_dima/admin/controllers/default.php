@@ -1,15 +1,17 @@
 <?php
 /**
- * @package     Joomla.Administrator
- * @subpackage  com_dima
+ * @package     com_dima
  *
- * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @author      Davidov D.
+ * @copyright   Copyright (C) 2013 Mindk, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die('Restricted access');
 
 /**
  * Abstract base controller class
+ *
+ * @package     com_dima
  */
 abstract class DimaControllersDefault extends JControllerBase
 {
@@ -33,6 +35,8 @@ abstract class DimaControllersDefault extends JControllerBase
 	 *
 	 * @param JInput           $input
 	 * @param JApplicationBase $app
+	 *
+	 * @return \DimaControllersDefault
 	 */
 	public function __construct(JInput $input = null, JApplicationBase $app = null)
 	{
@@ -47,6 +51,8 @@ abstract class DimaControllersDefault extends JControllerBase
 		$model_class = 'DimaModels' . ucfirst($model_name);
 
 		$this->model = new $model_class;
+
+		return $this;
 	}
 
 	/**

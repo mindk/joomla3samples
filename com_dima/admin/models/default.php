@@ -1,15 +1,17 @@
 <?php
 /**
- * @package     Joomla.Administrator
- * @subpackage  com_dima
+ * @package     com_dima
  *
- * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @author      Davidov D.
+ * @copyright   Copyright (C) 2013 Mindk, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 defined('_JEXEC') or die('Restricted access');
 
 /**
  * Default abstract model
+ *
+ * @package     com_dima
  */
 abstract class DimaModelsDefault extends JModelBase
 {
@@ -58,6 +60,8 @@ abstract class DimaModelsDefault extends JModelBase
 		$this->db = JFactory::getDBO();
 		$table_class = $this->getTableClassName();
 		$this->table = new $table_class($this->db);
+
+		return $this;
 	}
 
 	/**
@@ -73,7 +77,7 @@ abstract class DimaModelsDefault extends JModelBase
 	/**
 	 * Build List Selecting Query
 	 *
-	 * @return string SQL
+	 * @return object
 	 */
 	protected function buildQuery()
 	{
@@ -172,7 +176,7 @@ abstract class DimaModelsDefault extends JModelBase
 	/**
 	 * Get single item
 	 *
-	 * @return null
+	 * @return object
 	 */
 	public function getItem()
 	{
