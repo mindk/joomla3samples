@@ -1,4 +1,12 @@
-<?php // no direct access
+<?php
+/**
+ * Student mpdel class file
+ *
+ * @package   com_vpetrenko
+ * @author    VPetrenko
+ * @copyright 2011-2013 mindk (http://mindk.com). All rights reserved.
+ * @license   http://mindk.com Commercial
+ */
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -10,34 +18,6 @@ defined('_JEXEC') or die('Restricted access');
  */
 class VpetrenkoModelsStudents extends VpetrenkoModelsDefault
 {
-	/**
-	 * Build query for get list
-	 *
-	 * @return string SQL query
-	 */
-	public function _buildQuery()
-	{
-		$db = JFactory::getDBO();
-		$query = $db->getQuery(true);
-
-		$query->select('*')
-			->from('#__vpetrenko_students');
-
-		return $query;
-	}
-
-	/**
-	 * Build where condition
-	 *
-	 * @param $query SQL query
-	 *
-	 * @return string SQL query
-	 */
-	protected function _buildWhere($query)
-	{
-		$query->where('published = 1');
-		return $query;
-	}
 
 	/**
 	 * Store data

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Read and create action controller class file
+ *
+ * @package   com_vpetrenko
+ * @author    VPetrenko
+ * @copyright 2011-2013 mindk (http://mindk.com). All rights reserved.
+ * @license   http://mindk.com Commercial
+ */
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -36,7 +44,7 @@ class VpetrenkoControllersRead extends VpetrenkoControllersDefault
 			}
 		}
 
-		return parent::execute();
+		parent::execute();
 	}
 
 }

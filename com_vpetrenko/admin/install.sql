@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS `#__vpetrenko_students`;
 CREATE TABLE IF NOT EXISTS `#__vpetrenko_students` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(255) NOT NULL,
@@ -12,5 +11,4 @@ CREATE TABLE IF NOT EXISTS `#__vpetrenko_students` (
   `modified` datetime NOT NULL,
   `created` datetime NOT NULL,
   PRIMARY KEY (`id`)
-)DEFAULT CHARSET=utf8;;
-
+) DEFAULT CHARSET=utf8;

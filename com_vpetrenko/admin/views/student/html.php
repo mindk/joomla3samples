@@ -1,4 +1,14 @@
-<?php defined('_JEXEC') or die('Restricted access');
+<?php
+/**
+ * Student list view class file
+ *
+ * @package   com_vpetrenko
+ * @author    VPetrenko
+ * @copyright 2011-2013 mindk (http://mindk.com). All rights reserved.
+ * @license   http://mindk.com Commercial
+ */
+
+defined('_JEXEC') or die('Restricted access');
 
 /**
  * Student view class
@@ -11,7 +21,7 @@ class VpetrenkoViewsStudentHtml extends JViewHtml
 	/**
 	 * Render the page
 	 *
-	 * @return string
+	 * @return string view
 	 */
 	function render()
 	{
@@ -38,12 +48,14 @@ class VpetrenkoViewsStudentHtml extends JViewHtml
 
 	/**
 	 * Add the page title and toolbar
+	 *
+	 * @return void
 	 */
 	protected function addToolbar()
 	{
 		JFactory::getApplication()->input->set('hidemainmenu', true);
 
-		JToolBarHelper::title(JText::_('COM_ROOCKBUILDER_TITLE_PAGE'), 'page.png');
+		JToolBarHelper::title(JText::_('COM_VPETRENKO_TITLE_PAGES'));
 
 		JToolBarHelper::apply();
 		JToolBarHelper::save();
