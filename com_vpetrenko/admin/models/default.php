@@ -1,4 +1,12 @@
 <?php
+/**
+ * Base model class file
+ *
+ * @package   com_vpetrenko
+ * @author    VPetrenko
+ * @copyright 2011-2013 mindk (http://mindk.com). All rights reserved.
+ * @license   http://mindk.com Commercial
+ */
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -49,6 +57,8 @@ abstract class VpetrenkoModelsDefault extends JModelBase
 	 * Constructor for model
 	 *
 	 * @param JRegistry $state object of states
+	 *
+	 * @return VpetrenkoModelsDefault
 	 */
 	public function __construct(JRegistry $state = null)
 	{
@@ -72,7 +82,7 @@ abstract class VpetrenkoModelsDefault extends JModelBase
 	/**
 	 * Build get list query
 	 *
-	 * @return string SQL query
+	 * @return JDatabaseQuery  The current query object
 	 */
 	protected function buildQuery()
 	{
@@ -133,7 +143,7 @@ abstract class VpetrenkoModelsDefault extends JModelBase
 	{
 		if (empty ($this->total))
 		{
-			$query = $this->_buildQuery();
+			$query = $this->buildQuery();
 			$this->db->setQuery($query);
 			$this->db->execute();
 

@@ -1,10 +1,11 @@
 <?php
 /**
- * @package     Joomla.Administrator
- * @subpackage  com_banners
+ * Student form template
  *
- * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @package   com_vpetrenko
+ * @author    VPetrenko
+ * @copyright 2011-2013 mindk (http://mindk.com). All rights reserved.
+ * @license   http://mindk.com Commercial
  */
 
 defined('_JEXEC') or die;
@@ -21,7 +22,7 @@ JHtml::_('formbehavior.chosen', 'select');
 		}
 	}
 </script>
-<form action="<?php echo JRoute::_('index.php?option=com_vpetrenko&task=read&view=student&id='.(int) $this->item->id); ?>" method="post" name="adminForm" id="banner-form" class="form-validate form-horizontal">
+<form action="<?php echo JRoute::_('index.php?option=com_vpetrenko&task=read&view=student&id='.(int) (isset($this->item->id) ? $this->item->id : 0)); ?>" method="post" name="adminForm" id="banner-form" class="form-validate form-horizontal">
 
 	<div class="span10 form-horizontal">
 

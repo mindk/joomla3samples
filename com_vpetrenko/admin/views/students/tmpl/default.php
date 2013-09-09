@@ -1,4 +1,12 @@
 <?php
+/**
+ * Student list template
+ *
+ * @package   com_vpetrenko
+ * @author    VPetrenko
+ * @copyright 2011-2013 mindk (http://mindk.com). All rights reserved.
+ * @license   http://mindk.com Commercial
+ */
 
 defined('_JEXEC') or die;
 
@@ -38,26 +46,7 @@ $sortFields = $this->getSortFields();
 		<div id="j-main-container">
 			<?php endif; ?>
 			<div id="filter-bar" class="btn-toolbar">
-				<div class="filter-search btn-group pull-left">
-					<input type="text" name="filter_search" id="filter_search"
-					       placeholder="<?php echo JText::_('JSEARCH_FILTER'); ?>"
-					       value="<?php echo $this->escape($this->state->get('filter.search')); ?>" class="hasTooltip"
-					       title="<?php echo JHtml::tooltipText('COM_USERS_SEARCH_USERS'); ?>"/>
-				</div>
-				<div class="btn-group pull-left">
-					<button type="submit" class="btn hasTooltip"
-					        title="<?php echo JHtml::tooltipText('JSEARCH_FILTER_SUBMIT'); ?>"><i
-							class="icon-search"></i></button>
-					<button type="button" class="btn hasTooltip"
-					        title="<?php echo JHtml::tooltipText('JSEARCH_RESET'); ?>"
-					        onclick="document.id('filter_search').value='';this.form.submit();"><i
-							class="icon-remove"></i></button>
-				</div>
-				<div class="btn-group pull-right hidden-phone">
-					<label for="limit"
-					       class="element-invisible"><?php echo JText::_('JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC'); ?></label>
-					<?php echo $this->pagination->getLimitBox(); ?>
-				</div>
+
 				<div class="btn-group pull-right hidden-phone">
 					<label for="directionTable"
 					       class="element-invisible"><?php echo JText::_('JFIELD_ORDERING_DESC'); ?></label>
@@ -124,10 +113,10 @@ $sortFields = $this->getSortFields();
 						</td>
 						<td>
 							<?php if ($item->checked_out) : ?>
-								<?php echo JHtml::_('jgrid.checkedout', $i, JFactory::getUser($item->checked_out)->name, $item->checked_out_time, 'banners.', $canCheckin); ?>
+								<?php echo JHtml::_('jgrid.checkedout', $i, JFactory::getUser($item->checked_out)->name, $item->checked_out_time, 'banners.'); ?>
 							<?php endif; ?>
 							<a href="<?php echo JRoute::_('index.php?option=com_vpetrenko&view=student&task=read&id=' . (int) $item->id); ?>"
-							   title="<?php echo JText::sprintf('COM_USERS_EDIT_USER', $this->escape($item->name)); ?>">
+							   title="<?php echo $this->escape(JFactory::getUser($item->checked_out)->username); ?>">
 								<?php echo $this->escape($item->firstname); ?></a>
 						</td>
 						<td class="center">

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Default action controller class file
+ *
+ * @package   com_vpetrenko
+ * @author    VPetrenko
+ * @copyright 2011-2013 mindk (http://mindk.com). All rights reserved.
+ * @license   http://mindk.com Commercial
+ */
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -30,6 +38,8 @@ abstract class VpetrenkoControllersDefault extends JControllerBase
 	 *
 	 * @param JInput           $input   data from requests
 	 * @param JApplicationBase $app     application instance
+	 *
+	 * @return VpetrenkoControllersDefault
 	 */
 	public function __construct(JInput $input = null, JApplicationBase $app = null)
 	{
@@ -46,6 +56,8 @@ abstract class VpetrenkoControllersDefault extends JControllerBase
 
 	/**
 	 * Base method execute action controller
+	 *
+	 * @return void
 	 */
 	public function execute()
 	{

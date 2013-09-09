@@ -16,13 +16,13 @@
 
 	<install>
 		<sql>
-			<file driver="mysql" charset="utf8">sql/install.sql</file>
+			<file driver="mysql" charset="utf8">install.sql</file>
 		</sql>
 	</install>
 
 	<uninstall>
 		<sql>
-			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
 		</sql>
 	</uninstall>
 
@@ -33,10 +33,11 @@
 			<folder>controllers</folder>
 			<folder>language</folder>
 			<folder>models</folder>
-			<folder>sql</folder>
 			<folder>tables</folder>
 			<folder>views</folder>
 			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
 			<filename>vpetrenko.php</filename>
 		</files>
 
