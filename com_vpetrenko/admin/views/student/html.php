@@ -21,7 +21,7 @@ class VpetrenkoViewsStudentHtml extends JViewHtml
 	/**
 	 * Render the page
 	 *
-	 * @return string
+	 * @return string view
 	 */
 	function render()
 	{

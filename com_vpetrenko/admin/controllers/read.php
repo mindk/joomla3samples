@@ -44,7 +44,7 @@ class VpetrenkoControllersRead extends VpetrenkoControllersDefault
 			}
 		}
 
-		return parent::execute();
+		parent::execute();
 	}
 
 }

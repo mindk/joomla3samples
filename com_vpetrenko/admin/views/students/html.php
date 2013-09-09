@@ -21,7 +21,7 @@ class VpetrenkoViewsStudentsHtml extends JViewHtml
 	/**
 	 * Render the page
 	 *
-	 * @return void
+	 * @return string view
 	 */
 	function render()
 	{
@@ -31,6 +31,7 @@ class VpetrenkoViewsStudentsHtml extends JViewHtml
 		$this->pagination = $model->getPagination();
 
 		$this->addToolbar();
+
 		return parent::render();
 	}
 

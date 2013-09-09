@@ -11,7 +11,10 @@
 defined('_JEXEC') or die('Restricted access');
 
 /**
- * Class VpetrenkoTablesStudents
+ * Class for students table
+ *
+ * @package com_vpetrenko
+ * @author  Vpetrenko
  */
 class VpetrenkoTablesStudents extends JTable
 {
